@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مسجد الشيخ بياض - مشروع البناء</title>
 
+  <!-- SEO -->
+  <meta name="description" content="مشروع بناء مسجد الشيخ بياض بقرية شندويل البلد – صدقة جارية. التبرع عبر فودافون كاش وإنستاباي.">
+  <meta name="keywords" content="مسجد الشيخ بياض, بناء مسجد, صدقة جارية, تبرعات مسجد, سوهاج, شندويل">
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Hero Ayah */
+    #ayah {
+      font-size: 32px;       /* حجم كبير للآية */
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      transition: opacity 0.8s ease-in-out;
+    }
+  </style>
 </head>
 <body>
 
@@ -24,95 +43,103 @@
   </div>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero">
   <div class="slider">
-    <img src="images/9.jpg" class="slide active" alt="المسجد">
-    <img src="images/1.jpg" class="slide" alt="مرحلة البناء">
-    <img src="images/2.jpg" class="slide" alt="أعمال الإنشاء">
+    <img src="images/9.jpg" class="slide active">
+    <img src="images/1.jpg" class="slide">
+    <img src="images/2.jpg" class="slide">
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content container">
     <h2>ساهم في بناء بيت من بيوت الله</h2>
-    <p>صدقة جارية تبقى لك أجرها</p>
-    <div class="hero-buttons">
-      <a href="tel:01225084652" class="btn-primary">فودافون كاش</a>
-      <a href="tel:01150588920" class="btn-primary">إنستاباي</a>
-    </div>
+    <p id="ayah"></p>
+   <div class="hero-buttons">
+  <a href="tel:01225084652" class="btn-primary">فودافون كاش</a>
+  <a href="tel:01150588920" class="btn-primary">إنستاباي</a>
+</div>
+
   </div>
   <span class="arrow left" onclick="prevSlide()">&#10094;</span>
   <span class="arrow right" onclick="nextSlide()">&#10095;</span>
 </section>
 
-<!-- About Section -->
+<!-- About / Mosque Info -->
 <section id="about" class="section">
   <div class="container">
     <h3>عن المشروع</h3>
-    <p>
-      مشروع مسجد الشيخ بياض هو مشروع خيري يهدف إلى إنشاء مسجد متكامل
-      يخدم أهالي قرية شندويل البلد، ويشمل مصلى للرجال والنساء
-      ومرافق خدمية.
-    </p>
-  </div>
-</section>
 
-<!-- Donations Section -->
-<section id="donation" class="section gray">
-  <div class="container">
-    <h3>طرق التبرع</h3>
-    <p style="text-align:center;color:#555">
-      يمكنك التبرع مباشرة من الهاتف عبر الأرقام التالية:
-    </p>
     <div class="donation-cards">
       <div class="donation-card">
-        <h4>فودافون كاش</h4>
-        <p>اضغطي للتواصل المباشر عبر الهاتف</p>
-        <a href="tel:01225084652" class="btn-donate">التبرع الآن</a>
+        <h4>المساحة</h4>
+        <p>4500 متر مربع</p>
       </div>
       <div class="donation-card">
-        <h4>إنستاباي</h4>
-        <p>اضغطي للتواصل المباشر عبر الهاتف</p>
-        <a href="tel:01150588920" class="btn-donate">التبرع الآن</a>
+        <h4>عدد الطوابق</h4>
+        <p>2 طابق</p>
+      </div>
+      <div class="donation-card">
+        <h4>الطابق الأول</h4>
+        <p>مصلى للرجال ومرافق خدمية</p>
+      </div>
+      <div class="donation-card">
+        <h4>الطابق الثاني</h4>
+        <p>مصلى للنساء ومرافق خدمية</p>
       </div>
     </div>
+
+    <p style="margin-top:20px;">
+      المسجد القديم كان صغير و لا يتسع لأكثر من 40 شخصًا، مما جعل الحاجة لبناء مسجد جديد أمرًا ضروريًا. و هو أقدم مسجد في القرية و يهدف إلى توفير مكان مريح و مناسب للصلاة و العبادة لجميع سكان القرية والقرى المجاورة.
+    </p>
   </div>
 </section>
 
-<!-- Progress Section -->
+<!-- Donations -->
+<div class="donation-cards">
+  <div class="donation-card">
+    <h4>فودافون كاش</h4>
+    <a href="tel:01225084652" class="btn-donate">اتصل للتبرع</a>
+  </div>
+  <div class="donation-card">
+    <h4>إنستاباي</h4>
+    <a href="tel:01150588920" class="btn-donate">اتصل للتبرع</a>
+  </div>
+</div>
+
+
+<!-- Progress -->
 <section id="progress" class="section">
   <div class="container">
     <h3>نسبة الإنجاز</h3>
-   
     <div class="progress">
-      <div class="progress-bar" id="progressBar"></div>
-      <span class="progress-label" id="progressLabel">10%</span>
+      <div class="progress-bar"></div>
+      <span class="progress-label">10%</span>
     </div>
   </div>
 </section>
 
-<!-- Gallery Section -->
+<!-- Gallery -->
 <section id="gallery" class="section gray">
   <div class="container">
     <h3>مراحل البناء</h3>
     <div class="gallery">
-      <img src="images/21.jpg" alt="مرحلة 1">
-      <img src="images/22.jpg" alt="مرحلة 2">
-      <img src="images/19.jpg" alt="مرحلة 3">
-      <img src="images/18.jpg" alt="مرحلة 4">
+      <img src="images/20.jpg">
+      <img src="images/21.jpg">
+      <img src="images/22.jpg">
+      <img src="images/19.jpg">
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Contact -->
 <section id="contact" class="section">
   <div class="container">
     <h3>تواصل معنا</h3>
-    <p>📞 01225084652</p>
     <p>📍 قرية شندويل البلد – مركز المراغة – سوهاج</p>
     <div class="contact-numbers">
       <h4>أرقام التبرعات الرسمية</h4>
       <p><strong>إنستاباي:</strong> 01150588920</p>
-      <p><strong>محفظة فودافون كاش:</strong> 01225084652</p>
+      <p><strong>فودافون كاش:</strong> 01225084652</p>
     </div>
   </div>
 </section>
@@ -125,6 +152,38 @@
   </div>
 </footer>
 
+<!-- JS -->
 <script src="script.js"></script>
+<script>
+  // Hero Slider
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  function showSlide(index) {
+    slides.forEach((s,i) => s.classList.toggle('active', i===index));
+  }
+  function nextSlide() { currentSlide = (currentSlide+1) % slides.length; showSlide(currentSlide);}
+  function prevSlide() { currentSlide = (currentSlide-1+slides.length) % slides.length; showSlide(currentSlide);}
+
+  // Changing Ayah Automatically
+  const ayahs = [
+    "﴿ إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ ﴾",
+    "﴿ وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ ﴾",
+    "﴿ وَأَنشِئُوا مَا يُسْتَطَاعُ مِنَ المَسَاجِدِ ﴾"
+  ];
+  let ayahIndex = 0;
+  const ayahElement = document.getElementById('ayah');
+  function changeAyah() {
+    ayahElement.style.opacity = 0;
+    setTimeout(() => {
+      ayahElement.textContent = ayahs[ayahIndex];
+      ayahElement.style.opacity = 1;
+      ayahIndex = (ayahIndex+1)%ayahs.length;
+    }, 500);
+  }
+  changeAyah();
+  setInterval(changeAyah, 10000);
+</script>
+
 </body>
 </html>
+
