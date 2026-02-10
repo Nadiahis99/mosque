@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مسجد الشيخ بياض - مشروع البناء</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container navbar-container">
+    <h1 class="logo">مسجد الشيخ بياض</h1>
+    <nav>
+      <a href="#about">عن المشروع</a>
+      <a href="#donation">التبرعات</a>
+      <a href="#progress">التقدم</a>
+      <a href="#gallery">الصور</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="slider">
+    <img src="image/3.jpg" class="slide active" alt="المسجد">
+    <img src="image/1.jpg" class="slide" alt="مرحلة البناء">
+    <img src="image/2.jpg" class="slide" alt="أعمال الإنشاء">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content container">
+    <h2>ساهم في بناء بيت من بيوت الله</h2>
+    <p>صدقة جارية تبقى لك أجرها</p>
+    <div class="hero-buttons">
+      <a href="https://vodafonecash.com.eg" target="_blank" class="btn-primary">فودافون كاش</a>
+      <a href="https://www.instapay.com" target="_blank" class="btn-primary">إنستاباي</a>
+    </div>
+  </div>
+  <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h3>عن المشروع</h3>
+    <p>
+      مشروع مسجد الشيخ بياض هو مشروع خيري يهدف إلى إنشاء مسجد متكامل
+      يخدم أهالي قرية شندويل البلد، ويشمل مصلى للرجال والنساء
+      ومرافق خدمية.
+    </p>
+  </div>
+</section>
+
+<!-- Donations Section -->
+<section id="donation" class="section gray">
+  <div class="container">
+    <h3>طرق التبرع</h3>
+    <p style="text-align:center;color:#555">
+      التبرع يتم خارج الموقع عبر فودافون كاش أو إنستاباي
+    </p>
+    <div class="donation-cards">
+      <div class="donation-card">
+        <h4>فودافون كاش</h4>
+        <p>تحويل مباشر عبر الموقع الرسمي</p>
+        <a href="https://vodafonecash.com.eg" target="_blank" class="btn-donate">تبرع الآن</a>
+      </div>
+      <div class="donation-card">
+        <h4>إنستاباي</h4>
+        <p>تحويل بنكي فوري عبر الموقع الرسمي</p>
+        <a href="https://www.instapay.com" target="_blank" class="btn-donate">تبرع الآن</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Progress Section -->
+<section id="progress" class="section">
+  <div class="container">
+    <h3>نسبة الإنجاز</h3>
+    
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+      <span class="progress-label" id="progressLabel">10%</span>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="section gray">
+  <div class="container">
+    <h3>مراحل البناء</h3>
+    <div class="gallery">
+      <img src="images/stage1.jpg" alt="مرحلة 1">
+      <img src="images/stage2.jpg" alt="مرحلة 2">
+      <img src="images/stage3.jpg" alt="مرحلة 3">
+      <img src="images/stage4.jpg" alt="مرحلة 4">
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="container">
+    <h3>تواصل معنا</h3>
+    <p>📞 01000000000</p>
+    <p>📍 قرية شندويل البلد – مركز المراغة – سوهاج</p>
+    <div class="contact-numbers">
+      <h4>أرقام التبرعات الرسمية</h4>
+      <p><strong>إنستاباي:</strong> 01150588920</p>
+      <p><strong>محفظة فودافون كاش:</strong> 01225084652</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 مسجد الشيخ بياض</p>
+    <p>نسأل الله القبول</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
